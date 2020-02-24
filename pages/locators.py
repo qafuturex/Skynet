@@ -6,13 +6,19 @@ class BasePageLocators():
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
 
 
-class MainPageLocators():
-    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+class BasketPageLocators():
+    BASKET_BUTTON = (By.CSS_SELECTOR, ".basket-mini [href]")
+    BASKET_ITEMS = (By.CSS_SELECTOR, ".basket-items")
+    BASKET_EMPTY_MESSAGE = (By.CSS_SELECTOR, "#content_inner > p")
 
 
 class LoginPageLocator():
     LOGIN_FORM = (By.CSS_SELECTOR, '#login_form')
     REGISTER_FORM = (By.CSS_SELECTOR, '#register_form')
+
+
+class MainPageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
 
 
 class ProductPageLocators():
